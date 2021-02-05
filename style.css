@@ -1,0 +1,441 @@
+@font-face {
+font-family: "Montserrat-Light";  
+src: url("fonts/Montserrat-Light.ttf") format("truetype");  
+font-style: normal; 
+font-weight: normal; 
+} 
+@font-face {
+font-family: "Montserrat-LightItalic";  
+src: url("fonts/Montserrat-LightItalic.ttf") format("truetype");  
+font-style: normal; 
+font-weight: normal; 
+} 
+/*
+	font-family: "Montserrat-Light"; 
+	font-size: 25px;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 3.8px;
+  */
+* {
+	margin: 0;
+	padding: 0;
+}
+.clearfix:after{ /*Важная штука для позиционирования*/
+	content: "";
+	display: table;
+	clear: both;
+}
+.wrapper{
+	margin: 0 auto; 
+ 	max-width: 1440px;
+}
+.flexblock{
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body{
+	padding: 0;
+  margin: 0;
+	background-color: #e5fff3;
+	font-family: "Montserrat-Light"; 
+}
+h1{ 
+	font-family: "Montserrat-Light"; 
+	font-size: 35px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 4.8px; 
+}
+.wrapper-head{
+	background-size: cover;
+	background-image: url(E:/WORK/RUSLAN_Nail/img/121212131.jpg);
+	box-shadow: 0px 0px 12px 8px #AAF0D1;
+	opacity : 0.9;
+}
+img[alt="logo"]{
+	width: 300px;
+  height: 120px;
+  display: block;
+  margin: auto;
+}
+.social-logo-call{
+  margin: 0 auto;
+  padding-top: 70px;
+	height: 500px;
+}
+.sidebar__socials-links_call-links{
+	float: right;
+	padding: 100px 70px 0px 0px;
+}
+.sidebar__socials-links{
+	width: fit-content;
+	height: 60px;
+	margin: auto;
+	margin-top: 20px;	​​​
+}
+.social-links{
+	display: flex;
+	width: fit-content;
+  margin: auto;
+}
+.social-links_instagram{
+	width: 40px;
+  height: 40px;
+  margin: 0px 12px 0px 12px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+	background-image: url(E:/WORK/RUSLAN_Nail/img/Instagram-black-logo.svg);
+}
+.social-links_instagram:hover{
+	background-image: url(E:/WORK/RUSLAN_Nail/img/Instagram-color-logo.svg);
+}
+.social-links_vk{
+	width: 40px;
+  height: 40px;
+  margin: 0px 12px 0px 12px;
+  background-size: 100%;
+	background-repeat: no-repeat;
+	background-image: url(E:/WORK/RUSLAN_Nail/img/VK_Black&white_Logo.svg);
+}
+.social-links_vk:hover{
+	background-image: url(E:/WORK/RUSLAN_Nail/img/VK-color-logo.svg);
+}
+.social-links_whatsapp{
+	width: 40px;
+  height: 40px;
+  margin: 0px 12px 0px 12px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+	background-image: url(E:/WORK/RUSLAN_Nail/img/whatsapp-black.svg);
+}
+.social-links_whatsapp:hover{
+	background-image: url(E:/WORK/RUSLAN_Nail/img/whatsapp-color.svg);
+}
+.call-links{
+	margin: auto;
+	display: flex;
+}
+.header-top__call-tel{
+  color: #000;
+  text-decoration: none;
+  margin: auto;
+  font-family: "Montserrat-Light"; 
+	font-size: 30px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+.header-top__call-tel:hover{
+	text-decoration: none;
+	color: #ff0072;
+}
+.menu-block{
+	height: 47px;
+	margin: auto;
+	box-shadow: 0px 0px 12px 8px #AAF0D1;
+	background-color: #f8f8f8;
+	font-family: "Montserrat-Light"; 
+	font-size: 14px;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 3.8px;
+  text-align: left;
+}
+.menu-center{
+	width: 100%;
+	display: table;
+}
+.menu-center ul {
+	display: table-row;
+
+}
+.menu-center li {
+	display: table-cell;
+	position: relative;
+	background: #f8f8f8;
+}
+.menu-center li a {
+	display: block;
+	padding: 15px 15px;
+	color: #474A51;
+	text-align: center;
+}
+.menu-caret:after {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-left: .255em;
+	vertical-align: .255em;
+	content: "";
+	border-top: 3px solid;
+	border-right: 3px solid transparent;
+	border-bottom: 0;
+	border-left: 3px solid transparent;
+	background:rgba(170,240,209,0.5);
+}
+.menu-center ul li:hover, .menu a:hover {
+	background: #AAF0D1;
+	text-decoration: none;
+	font-weight: bold;
+}
+.menu-center li:hover ul  {
+	display: block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	background: #AAF0D1;
+	margin: 0;
+	padding: 10px 20px;
+	width: 150px;
+	z-index: 9999;
+}
+.menu-center ul ul  {
+	display: none;
+	opacity: 0.6;
+}
+.menu-center ul ul li  {
+	display: block;
+	background: #AAF0D1;
+	padding: 5px 0;
+}
+.menu-center ul ul li a  {
+	display: block;
+	padding: 0;
+	background: #AAF0D1;
+	text-align: left;
+}
+.menu-center ul ul li a:hover{
+  font-weight:bold;
+  color: black;
+}
+/********** ОСНОВНОЙ КОНТЕНТ **************/
+
+main{
+	position: relative;
+	height: 100%;
+}
+main:after {
+  content : "";
+  display: block;
+  position: absolute;
+  top: 0;  
+  left: 0;
+  background-image: url(E:/WORK/RUSLAN_Nail/img/bg.jpg);
+  background-size: 100%;
+	background-repeat: repeat;
+  width: 100%;
+  height: 100%;
+  opacity : 0.2;
+  z-index: -1;
+}
+.main-offer{
+	margin: auto;
+}
+.main-offer_h1-offer{
+	margin: 125px auto 45px;
+}
+.h1-offer-title{
+	text-align: center;
+	font-size: 35px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 4.8px; 
+}
+.main-offer_block{ 
+  width: 550px;
+  height: 450px;   
+  text-align:center;
+  margin: 10px;
+  box-shadow: 0px 0px 18px 10px #AAF0D1;
+}
+.main-offer__block-round{
+	width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  padding: 21px 30px 21px 20px;
+}
+.main-offer__block-type-title{
+	width: 230px;
+  height: 180px;   
+  text-align:center;
+}
+.main-offer_1{
+	float: right;
+	padding: 210px 0px 0px 48px;
+	color: white;
+}
+.main-offer_2{
+	float: left;
+	padding: 210px 39px 21px 0px;
+}
+.main-offer_3{
+	float: right;
+	padding: 0px 0px 21px 50px;
+}
+.main-offer_4{
+	float: left;
+	padding: 0px 29px 0px 0px;
+}
+.main-offer__block-type{
+	font-family: "Montserrat-Light";  
+	text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 4.8px;
+}
+.main-offer__block-title{
+	font-family: "Montserrat-LightItalic";  
+	text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  margin-bottom: 15px;
+}
+a.button {
+  font-family: "Montserrat-LightItalic";
+  display: inline-block;
+  width: 160px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px rgba(255,255,255,.2), 0 -1px rgba(0,0,0,.8);
+  outline: none;
+  border: none;
+  border-radius: 11px;
+  background: rgb(229 255 242) radial-gradient(150% 100% at 50% 5px, rgba(255,255,255,.2), rgba(0,0,0,0));
+  box-shadow: inset rgba(4,70,60,1) 0 -2px 5px, inset rgb(246,248,248) 0 2px 5px, rgba(0,0,0,.8) 0 2px 5px -1px;
+  color: rgb(51,51,51);
+  user-select: none;
+} 
+a.button:hover {
+  color: rgb(0,59,66);
+  cursor: pointer;
+  background: rgba(189,249,239,1.0)
+}
+a.button:active {
+  padding-bottom: 1px;
+  box-shadow:
+   inset rgba(0,0,0,1) 0 1px 3px,
+   inset rgba(0,0,0,.6) 0 -2px 5px,
+   inset rgba(252,255,255,.7) 0 2px 5px,
+   0 1px rgba(255,255,255,.08);
+  color: #ff0072;
+}
+.main-guarantees{
+	position: relative;
+	height: 360px;
+	width: 100%;
+	margin-top: 80px;
+	box-shadow: 0px 0px 12px 10px #a3e0da;
+}
+.main-guarantees:after{
+	content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+	left: 0;
+  background-image: url(E:/WORK/RUSLAN_Nail/img/121212131.jpg);
+ 	background-size: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  z-index: -1;
+}
+.main-guarantees_block_text{
+	padding: 80px 0 0 0;
+	margin: auto;
+	width: auto;
+}
+.main-guarantees_text{
+	font-size: 55px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 4.8px;
+  text-align:  center;
+  line-height: 1.5;
+}
+.instagram_herf-title{
+	width: 100%;
+	margin: 90px 0 35px 0;
+}
+.h1_myata{
+ 	color: black;
+ 	font-size: 40px;
+ 	font-weight: 400;
+ 	font-family: "Montserrat-LightItalic"; 
+}
+.h1_myata:focus{
+	text-decoration: none;
+	color: black;
+}
+.h1_myata:hover{
+	text-decoration: none;
+	color: #ff0072;
+	font-weight: 600;
+}
+.instagram_herf-block{
+	display: flex;
+  width: fit-content;
+  margin: auto;
+}
+.instagram_herf{
+	width: 50px;
+ 	height: 50px;
+}
+.instagram_herf:hover{
+	width: 50px;
+ 	height: 50px;
+}
+.instagram-image_block{
+	padding-bottom: 80px;
+}
+.instagram-image{
+	width: 320px;
+  height: 275px; 
+  margin: 10px;
+  box-shadow: 0px 0px 25px 10px #b2f1d6;
+}
+/*********** Подвал **************/
+footer{
+	box-shadow: 0px 0px 30px 20px #e5fff3;
+	border-top: 3px solid #aaf0d1;
+}
+.footer-all{
+    padding: 40px 0;
+}
+.footer-top {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.footer-info{
+	float: left;
+}
+.map{
+	float: right;
+}
+h2 {
+    font-size: 35px;
+    font-family: "Montserrat-Light", sans-serif;
+    margin-bottom: 20px;
+}
