@@ -375,9 +375,69 @@ a.button:active {
   text-align:  center;
   line-height: 1.5;
 }
+.main-about{
+	margin: 80px 0px 45px 0px;
+}
+.about-h1_center{
+	font-family: "Montserrat-Light";
+	text-align: center;
+  font-size: 35px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 4.8px;
+}
+.main-about_block{
+	width: 350px;
+  height: 250px;
+  margin: 10px;
+	border: 1px solid black;
+}
+@keyframes main-about__icon {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(-360deg);
+    }
+}
+.main-about__icon{
+	width: 70px;
+  height: 70px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+ 	border: 1px solid yellow;
+ 	animation: main-about__icon 10s infinite linear;
+}
+.main-about__block-info{
+	border: 1px solid green;
+}
+.main-about__block-title{
+	font-family: "Montserrat-Light"; 
+	font-size: 19px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2.8px;
+	text-align: center;
+	border: 1px solid red;
+}
+.main-about__block-text{
+	font-family: "Montserrat-Light"; 
+	font-size: 20px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+	text-align: center;
+	border: 1px solid blue;
+}
 .instagram_herf-title{
 	width: 100%;
-	margin: 90px 0 35px 0;
+	margin: 90px 0 45px 0;
 }
 .h1_myata{
  	color: black;
