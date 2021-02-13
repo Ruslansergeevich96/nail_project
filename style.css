@@ -321,7 +321,7 @@ a.button {
   text-shadow: 0 1px rgba(255,255,255,.2), 0 -1px rgba(0,0,0,.8);
   outline: none;
   border: none;
-  border-radius: 11px;
+  border-radius: 10px;
   background: rgb(229 255 242) radial-gradient(150% 100% at 50% 5px, rgba(255,255,255,.2), rgba(0,0,0,0));
   box-shadow: inset rgba(4,70,60,1) 0 -2px 5px, inset rgb(246,248,248) 0 2px 5px, rgba(0,0,0,.8) 0 2px 5px -1px;
   color: rgb(51,51,51);
@@ -390,9 +390,7 @@ a.button:active {
 }
 .main-about_block{
 	width: 350px;
-  height: 250px;
   margin: 10px;
-	border: 1px solid black;
 }
 @keyframes main-about__icon {
     from {
@@ -403,37 +401,38 @@ a.button:active {
     }
 }
 .main-about__icon{
-	width: 70px;
-  height: 70px;
-  background-size: 100%;
+	width: 21%;
+  height: 72px;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
- 	border: 1px solid yellow;
- 	animation: main-about__icon 10s infinite linear;
+ 	animation: main-about__icon 12s infinite linear;
+ 	float: left;
 }
 .main-about__block-info{
-	border: 1px solid green;
+	width: 79%;
+	float: right;
+	padding: 0 0 0 11px;
 }
 .main-about__block-title{
 	font-family: "Montserrat-Light"; 
-	font-size: 19px;
+	font-size: 21px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
-  letter-spacing: 2.8px;
-	text-align: center;
-	border: 1px solid red;
+  letter-spacing: 1.9px;
+	padding-top: 10px;
 }
 .main-about__block-text{
-	font-family: "Montserrat-Light"; 
+	font-family: "Montserrat-LightItalic";
 	font-size: 20px;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
-  letter-spacing: 0.8px;
-	text-align: center;
-	border: 1px solid blue;
+  letter-spacing: 0.3px;
+	text-align: left;
+	padding: 15px 0 15px 0;
 }
 .instagram_herf-title{
 	width: 100%;
@@ -462,17 +461,14 @@ a.button:active {
 .instagram_herf{
 	width: 50px;
  	height: 50px;
-}
-.instagram_herf:hover{
-	width: 50px;
- 	height: 50px;
+ 	margin: 0px 12px 0px 0px;
 }
 .instagram-image_block{
 	padding-bottom: 80px;
 }
 .instagram-image{
 	width: 320px;
-  height: 275px; 
+  height: 280px; 
   margin: 10px;
   box-shadow: 0px 0px 25px 10px #b2f1d6;
 }
