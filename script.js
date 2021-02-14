@@ -1,33 +1,33 @@
 <script>
-(function(){  // анонимная функция (function(){ })(), чтобы переменные "a" и "b" не стали глобальными
-var a = document.querySelector('.menu-block'), b = null;  // селектор блока, который нужно закрепить
+(function(){  
+var a = document.querySelector('.menu-block'), b = null;  
 function Ascroll() {
-  if (b == null) {  // добавить потомка-обёртку, чтобы убрать зависимость с соседями
+  if (b == null) {  
     var Sa = getComputedStyle(a, ''), s = '';
-    for (var i = 0; i < Sa.length; i++) {  // перечислить стили CSS, которые нужно скопировать с родителя
+    for (var i = 0; i < Sa.length; i++) {  
       if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
         s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
       }
     }
-    b = document.createElement('div');  // создать потомка
+    b = document.createElement('div');  
     b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
-    a.insertBefore(b, a.firstChild);  // поместить потомка в цепляющийся блок первым
+    a.insertBefore(b, a.firstChild);  
     var l = a.childNodes.length;
-    for (var i = 1; i < l; i++) {  // переместить во вновь созданного потомка всех остальных потомков (итого: создан потомок-обёртка, внутри которого по прежнему работают скрипты)
+    for (var i = 1; i < l; i++) {  
       b.appendChild(a.childNodes[1]);
     }
-    a.style.height = b.getBoundingClientRect().height + 'px';  // если под скользящим элементом есть другие блоки, можно своё значение
+    a.style.height = b.getBoundingClientRect().height + 'px';  
     a.style.padding = '0';
-    a.style.border = '0';  // если элементу присвоен padding или border
+    a.style.border = '0';  
   }
-  if (a.getBoundingClientRect().top <= 0) { // elem.getBoundingClientRect() возвращает в px координаты элемента относительно верхнего левого угла области просмотра окна браузера
+  if (a.getBoundingClientRect().top <= 0) { 
     b.className = 'sticky';
   } else {
     b.className = '';
   }
   window.addEventListener('resize', function() {
     a.children[0].style.width = getComputedStyle(a, '').width
-  }, false);  // если изменить размер окна браузера, измениться ширина элемента
+  }, false);  
 }
 })()
 </script>
