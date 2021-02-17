@@ -55,7 +55,7 @@ h1{
 .wrapper-head{
 	background-size: cover;
 	background-image: url(E:/WORK/RUSLAN_Nail/img/121212131.jpg);
-	box-shadow: 0px 0px 12px 8px #AAF0D1;
+	box-shadow: 0px 0px 0px 1px #AAF0D1;
 	opacity : 0.9;
 }
 img[alt="logo"]{
@@ -136,6 +136,11 @@ img[alt="logo"]{
 .header-top__call-tel:hover{
 	text-decoration: none;
 	color: #ff0072;
+}
+.bottom_box-shadow{
+	position: relative;
+	height: 1px;
+	box-shadow: 0px 0px 12px 10px #AAF0D1;
 }
 .menu-block{
 	height: 47px;
@@ -258,7 +263,7 @@ main:after {
   height: 450px;   
   text-align:center;
   margin: 10px;
-  box-shadow: 0px 0px 18px 10px #AAF0D1;
+  box-shadow: 0px 0px 12px 10px #AAF0D1;
 }
 .main-offer__block-round{
 	width: 100%;
@@ -464,15 +469,94 @@ a.button:active {
  	margin: 0px 12px 0px 0px;
 }
 .instagram-image_block{
-	padding-bottom: 80px;
+	padding-bottom: 190px;
 }
 .instagram-image{
 	width: 320px;
   height: 280px; 
   margin: 10px;
-  box-shadow: 0px 0px 25px 10px #b2f1d6;
+  box-shadow: 0px 0px 12px 10px #b2f1d6;
 }
 /*********** Подвал **************/
+
+footer{
+	height: 500px;
+	box-shadow: 0px 0px 50px 25px #bdf2db;
+	border-top: 2px solid white;
+	position: relative;
+}
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+    background-image: linear-gradient(to top, #75efda 20%, #bdf2db 80%);
+}
+.bgTop {
+    z-index: 15;
+    opacity: 0.4;
+}
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: 5;
+    opacity: 0.85;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.waveTop {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+}
+.waveMiddle {
+    background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
+
+/***********
 footer{
 	box-shadow: 0px 0px 30px 20px #e5fff3;
 	border-top: 3px solid #aaf0d1;
@@ -495,3 +579,4 @@ h2 {
     font-family: "Montserrat-Light", sans-serif;
     margin-bottom: 20px;
 }
+**************/
