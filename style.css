@@ -223,8 +223,9 @@ img[alt="logo"]{
 	text-align: left;
 }
 .menu-center ul ul li a:hover{
-  font-weight:bold;
-  color: black;
+  font-weight: bold;
+  color: #ff0072;
+  z-index: -1;
 }
 /********** ОСНОВНОЙ КОНТЕНТ **************/
 
@@ -269,7 +270,7 @@ main:after {
   height: 450px;   
   text-align:center;
   margin: 10px;
-  box-shadow: 0px 0px 12px 10px #AAF0D1;
+  box-shadow: 0px 0px 12px 10px #aaf1d2;
 }
 .main-offer__block-round{
 	width: 100%;
@@ -357,7 +358,7 @@ a.button:active {
 	height: 360px;
 	width: 100%;
 	margin-top: 80px;
-	box-shadow: 0px 0px 12px 10px #a3e0da;
+	box-shadow: 0px 0px 12px 10px #8ceae1;
 }
 .main-guarantees:after{
 	content: "";
@@ -387,7 +388,7 @@ a.button:active {
   line-height: 1.5;
 }
 .main-about{
-	margin: 80px 0px 45px 0px;
+	margin: 90px 0px 45px 0px;
 }
 .about-h1_center{
 	font-family: "Montserrat-Light";
@@ -447,7 +448,7 @@ a.button:active {
 }
 .instagram_herf-title{
 	width: 100%;
-	margin: 90px 0 45px 0;
+	margin: 90px 0 55px 0;
 }
 .h1_myata{
  	color: black;
@@ -481,7 +482,7 @@ a.button:active {
 	width: 320px;
   height: 290px; 
   margin: 10px;
-  box-shadow: 0px 0px 12px 10px #b2f1d6;
+  box-shadow: 0px 0px 12px 10px #f5abcc;
 }
 /*********** Подвал **************/
 
@@ -491,14 +492,24 @@ footer{
 	border-top: 2px solid white;
 	position: relative;
 }
-
+.footer_flexblock{
+	justify-content: space-evenly;		
+	flex-direction: column;
+}
+.footer-location-block{
+	width: 320px;
+  height: 290px;
+}
 img[alt="footerlogo"]{
 	margin: 40px auto;
 	width: 300px;
   height: 120px;
   display: block;
 }
-
+.footer_social-links{
+	width: 45px;
+  height: 45px;
+}
 
 
 
