@@ -5,18 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/bootstrap.min.css" type='text/css' media='all'>
 	<link rel="stylesheet" href="style.css">
-	<script src="js/bootstrap.js"></script>
 	<script src="js/script.js"></script>
 	<title>Document</title>
 </head>
 <body>
 	<script src="js/bubbly-bg.js"></script>
-	<script> bubbly({
-  colorStart: '#bff2dc',
-  colorStop: '#e5fff2',
-  bubbles:15,
-  bubbleFunc:() => `hsla(${Math.random() * 360}, 100%, 50%, ${Math.random() * 0.25})`
-});</script>
+	<script src="js/bubbly.js"></script>
 	<header> 
 	<!--header-->
 		<div class="wrapper-head">
@@ -164,13 +158,11 @@
 					</div>
 				</div>
 		<!--instaShow-->
-				<div class="wrapper flexblock">
-					<div class="instagram_herf-title">
-						<div class="instagram_herf-block">
-							<a href="https://www.instagram.com/tikhova_nail/" class="social-links_instagram instagram_herf" target="_blank"></a>
-							<a href="https://www.instagram.com/tikhova_nail/" class="h1-offer-title h1_myata" target="_blank">@tikhova_nail</a>
-						</div>				
-					</div>
+				<div class="instagram_herf-title">
+					<div class="instagram_herf-block">
+						<a href="https://www.instagram.com/tikhova_nail/" class="social-links_instagram instagram_herf" target="_blank"></a>
+						<a href="https://www.instagram.com/tikhova_nail/" class="h1-offer-title h1_myata" target="_blank">@tikhova_nail</a>
+					</div>				
 				</div>
 				<div class="wrapper flexblock instagram-image_block">
 					<img class="instagram-image 1st" src="E:/WORK/RUSLAN_Nail/img/instagram/IMG_1607.JPG" alt="Фото из Instagram">
@@ -188,8 +180,19 @@
 	</main>
 	<!--Footer-->		
 	<footer>
-			<a href=""><img src="img/footerlogo.png" alt="footerlogo"></a>
-
+		<div class="wrapper flexblock footer_flexblock">
+			<div class="footer-location-block">
+				<a href=""><img src="img/footerlogo.png" alt="footerlogo"></a>
+				<div class="social-links">
+						<a href="https://www.instagram.com/tikhova_nail/" class="social-links_instagram footer_social-links" target="_blank"></a>
+						<a href="" class="social-links_vk footer_social-links" target="_blank"></a>
+						<a href="" class="social-links_whatsapp footer_social-links" target="_blank"></a>
+				</div>	
+			</div>
+			<div class="footer-location-block"></div>	
+	
+		</div>		
+			
 		<div class="waveWrapper waveAnimation">
   		<div class="waveWrapperInner bgTop">
     		<div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
